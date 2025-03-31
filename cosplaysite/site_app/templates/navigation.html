@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/desktop_style.css' %}">    
+    <link rel="stylesheet" href="{% static 'css/mobile_style.css' %}">
+
+    
+    
+</head>
+
+<div class="navbar-container"></div>
+    <div class="navbar-toggle" >
+        <span class="fancy_widget"></span>
+        <span class="fancy_widget"></span>
+        <span class="fancy_widget"></span>
+    </div>
+
+    <nav class="navbar navbar-expand navbar-mobilemode">
+        
+        <ul class="navbar-list navbar-list-mobilemode">
+            <li class="nav-item nav-item-mobilemode">    
+                <a href="#intro">
+                    <div class="nav-item-text nav-item-text-mobilemode"> intro</div>
+                </a>
+            </li>
+            <li class="nav-item nav-item-mobilemode">
+                <a href="#gallery">
+                    <div class="nav-item-text nav-item-text-mobilemode">
+                        gallery
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item nav-item-mobilemode">
+                <a href="#works">
+                    <div class="nav-item-text nav-item-text-mobilemode">
+                        works
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item nav-item-mobilemode">
+                <a href="#socials">
+                    <div class="nav-item-text nav-item-text-mobilemode">
+                        socials
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item nav-item-mobilemode">
+                <a href="#secrets" id="secrets-link">
+                    <div class="nav-item-text nav-item-text-mobilemode">
+                        secrets
+                    </div>
+                </a>
+            </li>
+        </ul>
+        
+    </nav>
+    
+</div>
+
+
+<body>
+    <div class="content-divider">
+    {% block content %}
+    {% endblock %}
+    </div>
+</body>
+
+<footer>
+<section class="footer-content"> 
+    <p> 
+     how to contact me?:
+     <a href="mailto:example@gmail.com">example@gmail.com</a>
+     <a href="#discord">discord</a>
+    </p>
+</section>
+</footer>
+
+<script>
+      
+        const toggle = document.querySelector('.navbar-toggle');
+        const navbar = document.querySelector('.navbar-mobilemode');
+        toggle.addEventListener('click', () => {
+            navbar.classList.toggle('show');
+            toggle.classList.toggle('active');
+        });
+    
+    
+</script>
+</html>
+

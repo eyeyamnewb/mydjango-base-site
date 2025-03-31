@@ -1,0 +1,90 @@
+.navbar {
+    height: 5vw;
+    margin-top: -50px;
+    
+}
+.navbar-list {
+    background: linear-gradient(to top right, #d78ce0,  #90e6f1c9);
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 0rem;
+}
+.navbar-list a {
+    text-decoration: none;
+    color: white;
+}
+.nav-item {
+    display: block;
+    background: #e378e7c9;
+    margin-left:8%; 
+    font-weight: bold;
+    color: white;
+    width: 10%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.nav-item-text {
+    display: block;
+    position: relative;
+    
+    border-radius: 10px;
+    font-size: 2vw;
+    margin: 2%;
+    text-align: center;
+
+}
+.navbar-toggle {
+    display: none;
+}
+
+body {
+    background: black;
+}   
+/*########## coscard-container stuff ##########*/
+.coscard-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #d78ce0;
+    width: 50%;
+    height: 100%;
+    margin-left: 20vw;
+    margin-top: 10vh;
+}
+
+#PFP {
+    width: 30%;
+    height: 30%;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 60%;
+    margin-top: 5%;
+}
+.coscard-header {
+    margin-left: 2%;
+    margin-top: -40%;
+    font-weight: bold;
+    font-size: 3vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    color: white;
+}
+
+.coscard-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-top: 0%;
+    font-size: 170%;
+    color: white;
+}
+
+p {
+    width: 50%;
+}
+
+
